@@ -1,15 +1,25 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-
-Vue.use(VueRouter);
+import FormLogin from '../pages/FormLogin.vue'
+import FormRegister from '../pages/FormRegister.vue'
+import TipoTemplate from '../pages/TipoTemplate.vue'
+import CadastroTemplate from '../pages/CadastroTemplate.vue'
 
 const routes = [
-  // Defina suas rotas aqui
-];
+  {
+    path: '/',
+    component: FormLogin
+  },
+  {
+    path: '/Register',
+    component: FormRegister
+  },
+  {
+    path: '/TipoTemplate',
+    component: TipoTemplate
+  },
+  {
+    path: '/CadastroTemplate',
+    component: CadastroTemplate
+  },
+]
 
-const router = new VueRouter({
-  routes,
-  mode: 'history', // Configurar o modo de histórico
-});
-
-export default router;
+export default routes
