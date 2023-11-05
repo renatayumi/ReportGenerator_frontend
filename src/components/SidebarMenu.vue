@@ -4,8 +4,12 @@
       Relatórios
     </p>
     <ul class="menu-list">
-      <li><a>Tipos de Templates</a></li>
-      <li><a>Cadastros de Templates</a></li>
+      <li>
+        <router-link to="/TipoTemplate">Tipos de Templates</router-link>
+      </li>
+      <li>
+        <router-link to="/CadastroTemplate">Cadastros de Templates</router-link>
+      </li>
     </ul>
   </aside>
 </template>
