@@ -51,13 +51,7 @@
               </div>
 
               <div class="content">
-                <CustomButton
-                  label="Cadastre-se"
-                  variant="is-success"
-                  type="button"
-                  name="Cadastrarse"
-                  class="button is-success"
-                />
+                <router-link to="/Register" class="button is-success">Cadastre-se</router-link>
               </div>
             </div>
           </div>
