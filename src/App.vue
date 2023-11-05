@@ -1,17 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <FormLogin/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormLogin from './pages/FormLogin.vue'
 
 export default {
+  data() {
+    return {
+      login: '',
+      senha: '',
+    };
+  },
+  methods: {
+    submitForm() {
+      console.log('Login:', this.login);
+      console.log('Senha:', this.senha);
+    },
+    cadastroHandler() {
+      // Lógica para redirecionar para a página de cadastro
+    },
+  },
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    FormLogin,
+  },
+};
 </script>
 
 <style>
